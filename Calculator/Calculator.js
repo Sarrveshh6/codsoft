@@ -56,6 +56,7 @@ function handleOperator(nextOperator) {
     operator = '*';
   } else if (nextOperator === '÷') {
     operator = '/';
+   
   } else {
     operator = nextOperator;
   }
@@ -63,7 +64,7 @@ function handleOperator(nextOperator) {
   waitingForSecondValue = true;
 }
 
-// Function to perform the calculation
+
 function calculate(first, second, operator) {
   if (operator === '+') return first + second;
   if (operator === '-') return first - second;
